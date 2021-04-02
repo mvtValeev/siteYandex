@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        h4 {
+        color: #c0c0c0
+    }
+    </style>
+    <body>
+        {% block content %}{% endblock %}
+        {% if 'инженер' in title or 'строитель' in title %}
+            <h2 align="center">Инженерные тренажеры</h2>
+            <img src="../static/img/train_IT.jpg">
+        {% else %}
+            <h2 align="center">Научные симуляторы</h2>
+            <img src="../static/img/train.jpg">
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <body>
+    {% if number % 2 == 0 %}
+        <div>{{ number }} - чётное</div>
+    {% else %}
+       <div>{{ number }} - нечётное</div>
+    {% endif %}
+    </body>
+{% endblock %}
